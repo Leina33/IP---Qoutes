@@ -5,11 +5,12 @@
     <div *ngFor="let qoute of qoutes; let i = index">
             <li>{{ qoute.name }}</li>
             <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <!-- <app-qoute-detail [qoute]="qoute"></app-qoute-detail> -->
-            <app-qoute-detail *ngIf='qoute.showDescription' [qoute]='qoute'></app-qoute-detail>
+            <!-- <app-qoute-detail *ngIf='qoute.showDescription' [qoute]='qoute'></app-qoute-detail> -->
+            <app-qoute-detail *ngIf='qoute.showDescription' [qoute]='qoute' (isComplete) = 'completeQoute($event,i)'></app-qoute-detail>
     </div>
   </ul>
 </div>
+<p *ngIf='qoutes.length > 3'>You have too many qoutes</p>
 
 
 
