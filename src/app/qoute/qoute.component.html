@@ -1,9 +1,11 @@
 <div>
-    <h1>Life Qoutes</h1>
-    <hr>
-    <ul>
-      <li *ngFor='let qoute of qoutes'>
-        {{qoute.name}}
-      </li>
-    </ul>
-  </div>
+  <h1>Life Qoutes</h1>
+  <hr />
+  <ul>
+    <li *ngFor="let qoute of qoutes">
+      {{ qoute.name }}
+      <app-qoute-detail [qoute]="qoute"></app-qoute-detail>
+    </li>
+    <!-- <app-qoute-detail [qoute]="qoute"></app-qoute-detail> -->
+  </ul>
+</div>
