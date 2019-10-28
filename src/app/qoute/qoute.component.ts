@@ -17,6 +17,14 @@ export class QouteComponent implements OnInit {
   toggleDetails(index) {
     this.qoutes[index].showDescription = !this.qoutes[index].showDescription;
   }
+
+  completeQoute(isComplete, index){
+    if (isComplete) {
+      this.qoutes.splice(index,1);
+    }
+  }
+
+
   constructor() {}
 
   ngOnInit() {}
