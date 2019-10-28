@@ -2,10 +2,26 @@
   <h1>Life Qoutes</h1>
   <hr />
   <ul>
-    <li *ngFor="let qoute of qoutes">
-      {{ qoute.name }}
-      <app-qoute-detail [qoute]="qoute"></app-qoute-detail>
-    </li>
-    <!-- <app-qoute-detail [qoute]="qoute"></app-qoute-detail> -->
+    <div *ngFor="let qoute of qoutes; let i = index">
+            <li>{{ qoute.name }}</li>
+            <button (click)='toggleDetails(i)'>Toggle Details</button>
+            <!-- <app-qoute-detail [qoute]="qoute"></app-qoute-detail> -->
+            <app-qoute-detail *ngIf='qoute.showDescription' [qoute]='qoute'></app-qoute-detail>
+    </div>
   </ul>
 </div>
+
+
+
+
+
+<!-- <h1>Inspiration Qoutes</h1>
+<hr>
+<ul>
+  <div *ngFor='let qoute of qoutes;let i = index'>
+    <li>{{qoute.name}}</li>
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <app-qoute-detail *ngIf='qoute.showDescription' [qoute]='qoute'></app-qoute-detail>
+  </div>
+</ul>
+<p *ngIf='goals.qoute > 3'>You have too many qoutes</p> -->
