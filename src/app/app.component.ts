@@ -6,11 +6,11 @@ import { Qoutes } from './qoutes';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  qoutes:Qoutes []= [
-    {id:1, name:'No man is an Island'},
-    {id:2,name:'The beauty of life is to love your self'},
-    {id:3,name:'Karma is a bitch'},
-    {id:4,name:'Choosing to be positive and having a grateful attitude is going to determine how you are going to live your life.'}
+  // qoutes:Qoutes []= [
+  //   {id:1, name:'No man is an Island'},
+  //   {id:2,name:'The beauty of life is to love your self'},
+  //   {id:3,name:'Karma is a bitch'},
+  //   {id:4,name:'Choosing to be positive and having a grateful attitude is going to determine how you are going to live your life.'}
 
-  ];
+  // ];
 }
