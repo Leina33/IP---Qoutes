@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import { Qoutes } from '../qoutes';
 
 @Component({
@@ -9,6 +9,12 @@ import { Qoutes } from '../qoutes';
 export class QouteDetailComponent implements OnInit {
 
   @Input()qoute:Qoutes;
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  qouteComplete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
+  
 
   constructor() { }
 
