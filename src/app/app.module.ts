@@ -8,6 +8,7 @@ import { QouteComponent } from './qoute/qoute.component';
 import { QouteDetailComponent } from './qoute-detail/qoute-detail.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { QouteFormComponent } from './qoute-form/qoute-form.component';
     QouteComponent,
     QouteDetailComponent,
     DateCountPipe,
-    QouteFormComponent
+    QouteFormComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

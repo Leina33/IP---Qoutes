@@ -27,6 +27,7 @@
             <!-- <h4 id={{i}} appStrikethrough>{{goal.qoute}} due on {{qoute.completeDate|date|uppercase}}</h4> -->
             <li>{{ qoute.name }}  {{qoute.completeDate|date|uppercase}} </li>
             <button (click)='toggleDetails(i)' class="btn btn-success">Toggle Details</button>
+            <like-box></like-box>
           </div>
   
           <div *ngIf='qoute.showDescription'>
