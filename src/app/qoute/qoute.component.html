@@ -1,12 +1,11 @@
-<div>
+<!-- <div>
   <h1>Life Qoutes</h1>
   <hr />
   <ul>
     <div *ngFor="let qoute of qoutes; let i = index">
             <li>{{ qoute.name }}  {{qoute.completeDate|date|uppercase}} </li>
             <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <!-- <app-qoute-detail *ngIf='qoute.showDescription' [qoute]='qoute'></app-qoute-detail> -->
-            <app-qoute-detail *ngIf='qoute.showDescription' [qoute]='qoute' (isComplete) = 'completeQoute($event,i)'></app-qoute-detail>
+            <app-qoute-detail *ngIf='qoute.showDescription' [qoute]='qoute' (isComplete) = 'deleteQoutes($event,i)'></app-qoute-detail>
     </div>
   </ul>
 </div>
@@ -15,4 +14,26 @@
 
 
 
+ -->
 
+ <div class="container">
+    <h1>Life qoutes</h1>
+    <hr>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div *ngFor='let qoute of qoutes;let i = index'>
+          <div>
+            <h4 id={{i}} appStrikethrough>{{goal.qoute}} due on {{qoute.completeDate|date|uppercase}}</h4>
+            <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+          </div>
+  
+          <div *ngIf='qoute.showDescription'>
+            <app-qoute-detail  [qoute]='qoute' (isComplete) = 'deleteQoutes($event,i)'></app-qoute-detail>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <p *ngIf='qoutes.length > 3'>You have too many qoutes</p>
+  </div>

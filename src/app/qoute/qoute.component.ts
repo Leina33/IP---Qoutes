@@ -18,9 +18,13 @@ export class QouteComponent implements OnInit {
     this.qoutes[index].showDescription = !this.qoutes[index].showDescription;
   }
 
-  completeQoute(isComplete, index){
+  deleteQoutes(isComplete, index){
     if (isComplete) {
-      this.qoutes.splice(index,1);
+      let toDelete = confirm(`Are you sure you want to delete ${this.qoutes[index].name}?`)
+
+      if (toDelete){
+        this.qoutes.splice(index,1)
+      }
     }
   }
 
