@@ -8,11 +8,13 @@ import { Component, Input } from '@angular/core';
 
 export class LikeComponent {
   numberOfLikes :number=0;
+  numberOfDislike: number =0
+  ;
   likeButtonClick(){
     this.numberOfLikes++;
   }
   dislikeButtonClick(){
-    this.numberOfLikes --;
+    this.numberOfDislike--;
   }
 
   constructor() { }
