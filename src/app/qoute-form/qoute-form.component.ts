@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Qoutes } from '../qoutes';
 
 @Component({
   selector: 'app-qoute-form',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QouteFormComponent implements OnInit {
 
+  newQoutes = new Qoutes(0,"","",new Date());
   constructor() { }
 
   ngOnInit() {
