@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output, EventEmitter } from '@angular/core';
 import { Qoutes } from '../qoutes';
 
 @Component({
@@ -9,6 +9,7 @@ import { Qoutes } from '../qoutes';
 export class QouteFormComponent implements OnInit {
 
   newQoutes = new Qoutes(0,"","",new Date());
+  @Output() addQoutes = new EventEmitter<Qoutes>();
   constructor() { }
 
   ngOnInit() {
