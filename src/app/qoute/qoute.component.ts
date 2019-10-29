@@ -28,6 +28,13 @@ export class QouteComponent implements OnInit {
     }
   }
 
+  addNewQoutes(qoutes){
+    let qoutesLength = this.qoutes.length;
+    qoutes.id = qoutesLength+1;
+    qoutes.completeDate = new Date(qoutes.completeDate)
+    this.qoutes.push(qoutes)
+  } 
+
 
   constructor() {}
 
