@@ -1,27 +1,35 @@
-# Qoutes
+Life Quotes
+Quote Website where a person can add or delete quote that he/she has posted.The quote he/she has can be liked or disliked by viewers.
+## Author
+Dominic K. Rutto
 
-This project was generated with [Angular CLI](https://github.com/Leina33/IP---Qoutes.git) version 8.3.12.
+## Behaviour Driven Development(BDD)
+1 Input : Enter your quote.
+2 Output: Entered quote get posted.
 
-## Development server
+## Installation
+To view the website
+.Step 1 : Clone this repo : git clone (https://github.com/Leina33/IP---Qoutes.git).
+.Step 2 : Open the repo using prefered text editor e.g Visual Studio Code or Atom .
+.Step 3 : Code through the folder using terminal.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies Used
 
-## Code scaffolding
+1. Angular HTML : Templates - used for creating markup pages and user interface.
+2. Custom CSS - used to style Mark Up pages/User Interface.
+3. Bootstrap library for CSS.
 
-Run `ng generate component component-Qoutes` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Support and Contact details
+Incase of any questions or issues please feel free to conduct me through email(dominickrutto@gmail.com)
 
-## Running unit tests
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+Choose a License
+MIT License
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.

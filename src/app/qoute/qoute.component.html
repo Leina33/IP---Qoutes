@@ -24,8 +24,8 @@
       <div class="col-md-6">
         <div *ngFor='let qoute of qoutes;let i = index'>
           <div>
-            <!-- <h4 id={{i}} appStrikethrough>{{goal.qoute}} due on {{qoute.completeDate|date|uppercase}}</h4> -->
-            <li>{{ qoute.name }}  {{qoute.completeDate|date|uppercase}} </li>
+            
+            <li>{{ qoute.name }} {{qoute.description}} {{qoute.completeDate|date|uppercase}} </li>
             <button (click)='toggleDetails(i)' class="btn btn-success">Toggle Details</button>
             <like-box></like-box>
           </div>
