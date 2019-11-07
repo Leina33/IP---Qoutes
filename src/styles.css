@@ -1,5 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body{
-    background-color:yellow;
+    background-color: #dfe3ee;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: inherit;
+
 }
